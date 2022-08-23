@@ -8,7 +8,6 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
         StartTailLoop();
-        MoodLoop();
 	}
     public int a = 0;
 
@@ -19,36 +18,15 @@ public partial class MainPage : ContentPage
         angry.IsVisible = false;
         happy.IsVisible = false;
         await Task.Delay(10000);
+        happy.IsVisible = true;
+        angry.IsVisible = false;
+        ultrahappy.IsVisible = false;
+        await Task.Delay(30000);
+        happy.IsVisible = false;
+        angry.IsVisible = true;
+        ultrahappy.IsVisible = false;
         a = 0;
 	}
-    private async void MoodLoop()
-    {
-        int i = 0;
-        while (true)
-        {
-            await Task.Delay(5000);
-            i++;
-            if (i > 6 && a == 0)
-            {
-                happy.IsVisible = false;
-                angry.IsVisible = true;
-                ultrahappy.IsVisible = false;
-            }
-            else if (a == 1)
-            {
-                ultrahappy.IsVisible = true;
-                angry.IsVisible = false;
-                happy.IsVisible = false;
-                i = 0;
-            }
-            else
-            {
-                ultrahappy.IsVisible = false;
-                angry.IsVisible = false;
-                happy.IsVisible = true;
-            }
-        }
-    }
 
 	private async void StartTailLoop()
 	{

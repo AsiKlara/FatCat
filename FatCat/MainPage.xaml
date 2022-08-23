@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FatCat.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <AbsoluteLayout
+                HeightRequest="400"
+                HorizontalOptions="Center" 
+                TranslationX="40"
+                WidthRequest="400"
+            >   
+                <Image
+                    Source="fatcat1.png"
+                    SemanticProperties.Description="Cute cat"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                />
+                <Image
+                    Source="happy.png"
+                    x:Name="happy"
+                    SemanticProperties.Description="Cute cat"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="true"
+                />
+                <Image
+                    Source="ultrahappy.png"
+                    x:Name="ultrahappy"
+                    SemanticProperties.Description="Cute cat"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+                <Image
+                    Source="angry.png"
+                    x:Name="angry"
+                    SemanticProperties.Description="Cute cat"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+                <Image
+                    Source="tail1.png"
+                    x:Name="tail1"
+                    SemanticProperties.Description="Tail"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="true"
+                />
+                <Image
+                    Source="tail2.png"
+                    x:Name="tail2"
+                    SemanticProperties.Description="Tail"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+                <Image
+                    Source="tail3.png"
+                    x:Name="tail3"
+                    SemanticProperties.Description="Tail"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+                <Image
+                    Source="tail4.png"
+                    x:Name="tail4"
+                    SemanticProperties.Description="Tail"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+                <Image
+                    Source="tail5.png"
+                    x:Name="tail5"
+                    SemanticProperties.Description="Tail"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="false"
+                />
+            </AbsoluteLayout>
+            
+            <Label
+                Text="FatCat"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Feed Me pls UwU"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="FoodBtn"
+                Text="FOOD!"
+                SemanticProperties.Hint="Its food"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -7,26 +7,30 @@
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
-            VerticalOptions="Center">
+            VerticalOptions="Center"
+            >
             <AbsoluteLayout
                 HeightRequest="400"
                 HorizontalOptions="Center" 
                 TranslationX="40"
                 WidthRequest="400"
-            >   
+                x:Name="fatCat"
+            >
                 <Image
                     Source="fatcat1.png"
                     SemanticProperties.Description="Cute cat"
                     AbsoluteLayout.LayoutBounds="0,0,400,400"
                     Aspect="AspectFit"
-                />
+                    >
+
+                </Image>
                 <Image
                     Source="happy.png"
                     x:Name="happy"
                     SemanticProperties.Description="Cute cat"
                     AbsoluteLayout.LayoutBounds="0,0,400,400"
                     Aspect="AspectFit"
-                    IsVisible="true"
+                    IsVisible="false"
                 />
                 <Image
                     Source="ultrahappy.png"
@@ -39,6 +43,14 @@
                 <Image
                     Source="angry.png"
                     x:Name="angry"
+                    SemanticProperties.Description="Cute cat"
+                    AbsoluteLayout.LayoutBounds="0,0,400,400"
+                    Aspect="AspectFit"
+                    IsVisible="true"
+                />
+                <Image
+                    Source="hungry.png"
+                    x:Name="hungry"
                     SemanticProperties.Description="Cute cat"
                     AbsoluteLayout.LayoutBounds="0,0,400,400"
                     Aspect="AspectFit"
@@ -85,27 +97,44 @@
                     IsVisible="false"
                 />
             </AbsoluteLayout>
-            
-            <Label
-                Text="FatCat"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
-
-            <Label
-                Text="Feed Me pls UwU"
-                SemanticProperties.HeadingLevel="Level2"
-                FontSize="18"
-                HorizontalOptions="Center" />
-
-            <Button
-                x:Name="FoodBtn"
-                Text="FOOD!"
-                SemanticProperties.Hint="Its food"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
-
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="Center"
+                x:Name="foodstacklayout"
+                >
+                <Grid
+                Padding="30,0"
+                VerticalOptions="Center"
+                >
+                    <Grid.GestureRecognizers>
+                        <PanGestureRecognizer PanUpdated="Food1"/>
+                    </Grid.GestureRecognizers>
+                    <Image
+                    x:Name="FoodBtn"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Source="fish.png"
+                    SemanticProperties.Hint="Its food"
+                    HorizontalOptions="Center">
+                    </Image>
+                </Grid>
+                <Grid
+                Padding="30,0"
+                VerticalOptions="Center">
+                    <Grid.GestureRecognizers>
+                        <PanGestureRecognizer PanUpdated="Food1"/>
+                    </Grid.GestureRecognizers>
+                    <Image
+                    x:Name="FoodBtn2"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    Source="cupcake2.png"
+                    SemanticProperties.Hint="Its food"
+                    HorizontalOptions="Center"
+                    >
+                    </Image>
+                </Grid>
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

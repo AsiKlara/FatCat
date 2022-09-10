@@ -55,6 +55,9 @@
 	  <None Remove="Resources\Images\fish.png" />
 	  <None Remove="Resources\Images\happy.png" />
 	  <None Remove="Resources\Images\hungry.png" />
+	  <None Remove="Resources\Images\icecream.png" />
+	  <None Remove="Resources\Images\mouse.png" />
+	  <None Remove="Resources\Images\partycat.png" />
 	  <None Remove="Resources\Images\tail1.png" />
 	  <None Remove="Resources\Images\tail2.png" />
 	  <None Remove="Resources\Images\tail3.png" />
@@ -64,7 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="NewContent1.xaml">
+	  <MauiXaml Update="NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

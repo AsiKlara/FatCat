@@ -1,4 +1,6 @@
-﻿namespace FatCat;
+﻿using MauiApp1;
+
+namespace FatCat;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
-	}
+		MainPage = new NavigationPage(new MainPage());
+    }
 }

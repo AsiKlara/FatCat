@@ -11,5 +11,4 @@
         Title="Your Fat Cat"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-
 </Shell>

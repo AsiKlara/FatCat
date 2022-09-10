@@ -1,4 +1,6 @@
-﻿namespace FatCat;
+﻿using MauiApp1;
+
+namespace FatCat;
 
 public partial class MainPage : ContentPage
 {
@@ -10,6 +12,10 @@ public partial class MainPage : ContentPage
     public double ax = 0;
     public double ay = 0;
     private bool run = false;
+    private void Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new NewPage1());
+    }
     private async void Food1(object sender, PanUpdatedEventArgs e)
 	{
         if(e.StatusType == GestureStatus.Running)

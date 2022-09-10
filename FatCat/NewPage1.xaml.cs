@@ -44,7 +44,7 @@ public partial class NewPage1 : ContentPage
             fish = 0;
             cupcake = 0;
             icecream = 0;
-            a = random.Next(1, 4);
+            a = random.Next(1, 5);
             if (a == 1)
             {
                 mouse1.IsVisible = true;
@@ -78,7 +78,7 @@ public partial class NewPage1 : ContentPage
                 icecream1.IsVisible = true;
                 icecream++;
             }
-            a = random.Next(1, 4);
+            a = random.Next(1, 5);
             if (a == 1)
             {
                 mouse2.IsVisible = true;
@@ -112,7 +112,7 @@ public partial class NewPage1 : ContentPage
                 icecream2.IsVisible = true;
                 icecream++;
             }
-            a = random.Next(1, 4);
+            a = random.Next(1, 5);
             if (a == 1)
             {
                 mouse3.IsVisible = true;
@@ -146,7 +146,7 @@ public partial class NewPage1 : ContentPage
                 icecream3.IsVisible = true;
                 icecream++;
             }
-            a = random.Next(1, 4);
+            a = random.Next(1, 5);
             if (a == 1)
             {
                 mouse4.IsVisible = true;
